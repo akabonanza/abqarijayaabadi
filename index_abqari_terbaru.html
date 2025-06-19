@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT Abqari Jaya Abadi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #2e7d32;
+    }
+    .produk {
+      background: #e8f5e9;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .contact-form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      background-color: #2e7d32;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PT Abqari Jaya Abadi</h1>
+    <p>Mitra Pertanian Anda Menuju Lahan Subur dan Produktif</p>
+  </header>
+
+  <section>
+    <h2>Tentang Kami</h2>
+    <p><strong>PT Abqari Jaya Abadi</strong> adalah perusahaan distributor pupuk yang berfokus pada peningkatan kualitas tanah dan hasil pertanian di Indonesia, khususnya di wilayah Aceh dan sekitarnya.</p>
+
+    <p>Kami berdiri dengan semangat untuk mendukung petani Indonesia melalui penyediaan pupuk berkualitas tinggi, baik organik maupun dolomit, yang ramah lingkungan dan sesuai dengan kebutuhan pertanian modern.</p>
+
+    <p><strong>Alamat Kantor:</strong><br>
+    Jalan Rama Setia Lorong Bakti No. 25<br>
+    Kelurahan Lampaseh Kota, Kecamatan Kuta Raja<br>
+    Kota Banda Aceh, Provinsi Aceh</p>
+
+    <h3>Visi</h3>
+    <p>Menjadi distributor pupuk terpercaya dan terdepan yang mendorong pertanian berkelanjutan dan meningkatkan kesejahteraan petani.</p>
+
+    <h3>Misi</h3>
+    <ul>
+      <li>Menyediakan produk pupuk berkualitas dengan harga kompetitif</li>
+      <li>Menjalin kemitraan strategis dengan petani, pemerintah, dan perusahaan agribisnis</li>
+      <li>Mendukung praktik pertanian yang sehat dan ramah lingkungan</li>
+      <li>Memberikan edukasi dan pendampingan teknis kepada petani</li>
+    </ul>
+
+    <h2>Produk Unggulan</h2>
+    <div class="produk">
+      <h3>Pupuk Dolomit ABAH MERAK</h3>
+      <ul>
+        <li>Kalsium (CaO): 30,68%</li>
+        <li>Magnesium (MgO): 20,80%</li>
+        <li>Kadar Air: 0,44%</li>
+        <li>Mess 100 (tepung sangat halus)</li>
+      </ul>
+      <p><strong>Keunggulan:</strong></p>
+      <ul>
+        <li>Menetralkan keasaman tanah</li>
+        <li>Memperbaiki struktur dan pH tanah</li>
+        <li>Menambah unsur hara penting (Ca & Mg)</li>
+        <li>Cepat diserap tanah, cocok untuk semua jenis tanaman</li>
+      </ul>
+      <p><strong>Produsen:</strong> CV Putra Krueng Jreu</p>
+    </div>
+
+    <h2>Kontak Kami</h2>
+    <div class="contact-form">
+      <form onsubmit="kirimWA(); return false;">
+        <input type="text" id="nama" placeholder="Nama Anda" required>
+        <input type="email" id="email" placeholder="Email Anda" required>
+        <textarea id="pesan" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+        <button type="submit">Kirim via WhatsApp</button>
+      </form>
+    </div>
+
+    <p><strong>Telepon/WA:</strong> <em>+62xxxxxxxxxxx</em></p>
+    <p><strong>Email:</strong> <em>email@abqarijaya.co.id</em></p>
+    <p><strong>Instagram/Facebook:</strong> @abqarijaya</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PT Abqari Jaya Abadi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function kirimWA() {
+      var nama = document.getElementById('nama').value;
+      var email = document.getElementById('email').value;
+      var pesan = document.getElementById('pesan').value;
+      var link = `https://wa.me/62xxxxxxxxxxx?text=Halo,%20saya%20${nama}%20(${email})%20ingin%20menghubungi%20Anda.%20Pesan:%20${pesan}`;
+      window.open(link, '_blank');
+    }
+  </script>
+</body>
+</html>
